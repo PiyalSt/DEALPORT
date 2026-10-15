@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router";
+import DashboardLayout from "./layouts/DashboardLayout";
 
 const App = () => {
   return (
@@ -7,7 +8,9 @@ const App = () => {
       {/* Routes */}
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route path="/" element={<DashboardLayout />} >
+            {/* <Route index element={} /> */}
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
