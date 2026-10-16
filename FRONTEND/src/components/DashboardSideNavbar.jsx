@@ -13,7 +13,7 @@ import { PiSignOutBold } from "react-icons/pi";
 
 const DashboardSideNavbar = () => {
   return (
-    <div className="w-full h-full bg-white overflow-y-auto">
+    <div className="w-full h-full bg-white overflow-y-auto border-r-2 border-neutral-200">
       <div className="p-6">
         <Link to={"/"}>
           <img src={assets.logo} alt="logo" />
@@ -102,7 +102,7 @@ const DashboardSideNavbar = () => {
         </div>
         <div className="px-6 py-4 space-y-2">
           <NavLink
-            to={"/addproducts"}
+            to={"/adminprofile"}
             className={({ isActive }) =>
               `w-full flex items-center gap-4 py-2 px-4 rounded-md cursor-pointer hover:bg-primary hover:text-white hover:font-bold active:scale-95 transition-all duration-200 ${isActive ? "bg-primary text-white font-bold" : "bg-transparent text-text"}`
             }
@@ -116,7 +116,11 @@ const DashboardSideNavbar = () => {
       <div className="w-full px-6 bg-green-100/40 py-4 space-y-2">
         <div className="flex items-center gap-2">
           <div className="w-10 h-10 rounded-full">
-            <img className="w-full h-full object-cover" src={assets.profile} alt="" />
+            <img
+              className="w-full h-full object-cover"
+              src={assets.profile}
+              alt=""
+            />
           </div>
           <div>
             <h4 className="text-neutral-800 font-semibold">Dealport</h4>
