@@ -2,58 +2,62 @@ import React from "react";
 import { HiDotsVertical } from "react-icons/hi";
 import { BiMessageDetail } from "react-icons/bi";
 import { MdOutlineDeleteSweep } from "react-icons/md";
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 const Customers = () => {
   return (
     <div className="w-full h-full px-4 py-4 space-y-4">
       <div className="space-y-6">
-        <div>
-          <h4 className="font-bold text-2xl text-neutral-800">Customers List</h4>
-        </div>
         <div className="flex items-center gap-4">
-          <div className="w-full p-6 bg-white shadow-lg rounded-md space-y-2">
+          <div className="w-full p-6 bg-white shadow-lg rounded-md space-y-4">
             <div className="flex justify-between">
               <h4 className="text-lg font-bold text-neutral-800">
                 Total Customers
               </h4>
-              <HiDotsVertical className="text-xl" />
+              <div className="cursor-pointer active:scale-95 hover:text-neutral-700 transition-all duration-200">
+                <BsThreeDotsVertical className="text-2xl" />
+              </div>
             </div>
             <div className="flex justify-between items-center">
               <div>
-                <h4 className="text-4xl font-bold">2,394</h4>
-                <p className="text-base text-neutral-500">All days</p>
+                <h4 className="text-3xl font-bold text-neutral-800">2,394</h4>
+                <p className="text-sm text-neutral-500">Last 7 days</p>
               </div>
               <div>
                 <p className="text-xl text-green-500">14.4%</p>
               </div>
             </div>
           </div>
-          <div className="w-full p-6 bg-white shadow-lg rounded-md space-y-2">
-            <div className="flex justify-between">
-              <h4 className="text-lg font-bold text-neutral-800">New Customers</h4>
-              <HiDotsVertical className="text-xl" />
-            </div>
-            <div className="flex justify-between items-center">
-              <div>
-                <h4 className="text-4xl font-bold">394</h4>
-                <p className="text-base text-neutral-500">Last 7 days</p>
-              </div>
-              <div>
-                <p className="text-xl text-green-500">14.4%</p>
-              </div>
-            </div>
-          </div>
-          <div className="w-full p-6 bg-white shadow-lg rounded-md space-y-2">
+          <div className="w-full p-6 bg-white shadow-lg rounded-md space-y-4">
             <div className="flex justify-between">
               <h4 className="text-lg font-bold text-neutral-800">
-                Visitors
+                New Customers
               </h4>
-              <HiDotsVertical className="text-xl" />
+              <div className="cursor-pointer active:scale-95 hover:text-neutral-700 transition-all duration-200">
+                <BsThreeDotsVertical className="text-2xl" />
+              </div>
             </div>
             <div className="flex justify-between items-center">
               <div>
-                <h4 className="text-4xl font-bold">2,394</h4>
-                <p className="text-base text-neutral-500">Last 7 days</p>
+                <h4 className="text-3xl font-bold text-neutral-800">2,394</h4>
+                <p className="text-sm text-neutral-500">Last 7 days</p>
+              </div>
+              <div>
+                <p className="text-xl text-green-500">14.4%</p>
+              </div>
+            </div>
+          </div>
+          <div className="w-full p-6 bg-white shadow-lg rounded-md space-y-4">
+            <div className="flex justify-between">
+              <h4 className="text-lg font-bold text-neutral-800">Visitors</h4>
+              <div className="cursor-pointer active:scale-95 hover:text-neutral-700 transition-all duration-200">
+                <BsThreeDotsVertical className="text-2xl" />
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <div>
+                <h4 className="text-3xl font-bold text-neutral-800">2,394</h4>
+                <p className="text-sm text-neutral-500">Last 7 days</p>
               </div>
               <div>
                 <p className="text-xl text-green-500">14.4%</p>

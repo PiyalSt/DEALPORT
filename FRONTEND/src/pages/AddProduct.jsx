@@ -5,11 +5,8 @@ import { CiImageOn } from "react-icons/ci";
 const AddProduct = () => {
   return (
     <div className="w-full flex">
-      <div className="w-1/2 px-10">
-        <h2 className="text-2xl font-bold text-neutral-800 py-4">
-          Basic Details
-        </h2>
-        <div className="w-full flex flex-col gap-4 bg-white p-6 rounded-md">
+      <div className="w-1/2 px-10 py-10">
+        <div className="w-full flex flex-col gap-4  bg-white p-6 rounded-md">
           <div className="w-full space-y-2">
             <p className="text-base font-bold text-neutral-800">Product Name</p>
             <input
@@ -78,7 +75,7 @@ const AddProduct = () => {
         </div>
       </div>
       <div className="w-1/2 px-10">
-        <div className="flex flex-col gap-4 bg-white p-6 rounded-md mt-16">
+        <div className="flex flex-col gap-4 bg-white p-6 rounded-md mt-10">
           <p className="text-base font-bold text-neutral-800">Product Image</p>
 
           <div className="flex items-center justify-center">

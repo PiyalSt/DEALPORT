@@ -6,6 +6,7 @@ import OrderManagement from "./pages/OrderManagement";
 import Customers from "./pages/Customers";
 import AddProduct from "./pages/AddProduct";
 import AdminProfile from "./pages/AdminProfile";
+import { Toaster } from 'react-hot-toast';
 
 const App = () => {
   return (
@@ -22,6 +23,9 @@ const App = () => {
           </Route>
         </Routes>
       </BrowserRouter>
+
+      {/* Toaster */}
+      <Toaster />
     </div>
   );
 };
