@@ -10,6 +10,10 @@ import { Toaster } from "react-hot-toast";
 import Categories from "./pages/Categories";
 import CouponCode from "./pages/CouponCode";
 import Transaction from "./pages/Transaction";
+import HomePage from "./pages/HomePage";
+import Register from "./pages/Register";
+import CartPage from "./pages/CartPage";
+import Login from "./pages/Login";
 
 const App = () => {
   return (
@@ -17,8 +21,9 @@ const App = () => {
       {/* Routes */}
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<DashboardLayout />}>
-            <Route index element={<Dashboard />} />
+          {/* Dashboard routes */}
+          <Route element={<DashboardLayout />}>
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/order" element={<OrderManagement />} />
             <Route path="/customer" element={<Customers />} />
             <Route path="/couponcode" element={<CouponCode />} />
@@ -27,6 +32,12 @@ const App = () => {
             <Route path="/addproducts" element={<AddProduct />} />
             <Route path="/adminprofile" element={<AdminProfile />} />
           </Route>
+
+          {/* Ecommerce Home page */}
+          <Route path="/" element={<HomePage />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/cartpage" element={<CartPage />} />
         </Routes>
       </BrowserRouter>
 

@@ -363,7 +363,7 @@ const CouponCode = () => {
         </div>
 
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[860px] text-center">
+          <table className="w-full min-w-215 text-center">
             <thead>
               <tr className="bg-gray-50 text-gray-900">
                 <th className="rounded-l-md py-4 font-semibold">No</th>
@@ -429,7 +429,7 @@ const CouponCode = () => {
                         >
                           <span
                             className={`absolute top-0.5 h-5 w-5 rounded-full bg-white transition-all ${
-                              c.active ? "left-[22px]" : "left-0.5"
+                              c.active ? "left-5.5" : "left-0.5"
                             }`}
                           />
                         </button>
